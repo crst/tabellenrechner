@@ -1,0 +1,45 @@
+body {
+    background: #333333;
+    font-family: sans-serif;
+}
+
+a {
+    color: #0000cd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: none;
+}
+
+#show-help {
+    float: right;
+}
+
+#help {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    background: #fafafa;
+    box-shadow: 2px 2px 2px 0px #c0c0c0;
+    color: #333333;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+#help #close {
+    float: right;
+    padding: 1em;
+}
+
+#help ul {
+    list-style-type: square;
+}

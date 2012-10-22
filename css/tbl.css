@@ -1,0 +1,121 @@
+/* The container div */
+
+#tbl-container {
+    background: #f0f0f0;
+    margin: 1em auto 0 auto;
+    display: table;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #c0c0c0;
+    padding: 2em;
+}
+
+
+/* The matchday selector */
+
+#tbl-nav {
+    text-align: center;
+    clear: both;
+}
+
+#tbl-caption {
+    display: inline-block;
+}
+
+#tbl-nav select {
+    font-size: 12pt;
+    padding: 0.25em;
+    background: transparent;
+    border: 1px solid #c0c0c0;
+    height: 2em;
+}
+
+#tbl-prev,
+#tbl-next {
+    display: inline-block;
+    font-size: 48pt;
+    padding-bottom: 0.1em;
+    vertical-align: middle;
+}
+
+#tbl-reset {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+
+/* The matchlist */
+
+#tbl-matches {
+    width: 600px;
+}
+
+#tbl-matchday {
+    margin: 0 auto 0 auto;
+    display: table;
+    opacity: 0;
+}
+
+#tbl-matchday input {
+    background: #fcfcfc;
+    border: 1px solid #cecece;
+    width: 2em;
+    text-align: right;
+    maxlength: 2;
+}
+
+.tbl-goal {
+    padding-right: 1em;
+}
+
+.tbl-sep {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.tbl-clear {
+    padding-left: 0.5em;
+}
+
+
+/* The table */
+
+#tbl-ranking {
+    padding-top: 1em;
+}
+
+#tbl-ranking table {
+    width: 100%;
+    background: #fcfcfc;
+    border-collapse: collapse;
+}
+
+#tbl-ranking thead th,
+#tbl-ranking thead td {
+    background: #87cefa;
+    text-align: right;
+    min-width: 3em;
+}
+
+#tbl-ranking thead th:nth-child(2),
+#tbl-ranking thead td:nth-child(2) {
+    text-align: left;
+}
+
+#tbl-ranking tbody th,
+#tbl-ranking tbody td {
+    text-align: right;
+    padding: 4px;
+}
+
+#tbl-ranking tbody th:nth-child(2),
+#tbl-ranking tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.tbl-highlight-team {
+    font-weight: bold;
+}
+
+.tbl-highlight-row {
+    color: #ff0000;
+}

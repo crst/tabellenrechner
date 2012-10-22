@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabellenrechner</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tbl.css">
+
+    <script src="js/lib/jquery/jquery-1.8.2.min.js"></script>
+
+    <script src="js/tbl.js"></script>
+    <script src="js/tbl-data.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#display-help').click(function () { $('#help').fadeIn(); });
+        $('#help').click(function () { $(this).fadeOut(); });
+      });
+    </script>
+
+  </head>
+  <body>
+    <div id="help">
+      <div id="close"><a href="javascript:void(0);">Close</a></div>
+
+      <h2>Tabellenrechner</h2>
+
+      <p>This is a demo of the table predictor for a small soccer
+      league with only four teams. Other leagues can be created by
+      changing the teams and matchdays within
+      the <i><a href="js/tbl-data.js"
+      target="blank">tbl-data.js</a></i> file.
+
+      <h2>How to use</h2>
+
+      <p>You can either enter the predicted results directly or:
+        <ul>
+          <li>Left click on a team name to increase the number of goals by one.</li>
+          <li>Right click on a team name to decrease the number of goals by one.</li>
+          <li>Left click on an empty input field to set the number of
+          goals to zero.</li>
+        </ul>
+      </p>
+
+      The table will be updated automatically whenever a result is
+      changed.
+
+      <p>Clicking on the <b>&times</b> next to a game will remove the
+      result of the game, as if the game was not (yet) played.</p>
+
+      <p>Clicking on <i>Reset</i> will revert the table to its initial
+      values.</p>
+    </div>
+
+    <div id="tbl-container">
+      <div id="show-help"><a href="javascript:void(0);" id="display-help">?</a></div>
+    </div>
+
+  </body>
+</html>  
