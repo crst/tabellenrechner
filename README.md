@@ -4,7 +4,7 @@ Tabellenrechner
 Tabellenrechner is a table predictor for a soccer league (or other
 leagues with a similar point system), written in JavaScript. An
 example can be found
-[here](http://crst.github.com/tabellenrechner/tbl.html).
+[here](http://crst.github.io/tabellenrechner/tbl.html).
 
 It loads the teams and matchdays from a configuration file
 [tbl-data.js](tabellenrechner/tree/master/js/tbl-data.js).
